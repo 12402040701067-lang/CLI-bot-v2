@@ -4,6 +4,30 @@ This directory contains the complete CLI application deliverables. It integrates
 
 ---
 
+## ✨ Key Features
+
+* **Advanced Model Configurations & Cost Calculation**: Fully nested and customized pricing for:
+  * **OpenAI**: `gpt-4o-mini`, `gpt-4o`
+  * **Google Gemini**: `gemini-1.5-flash`, `gemini-1.5-pro`
+  * **Anthropic**: `claude-3-haiku-20240307`, `claude-3-5-sonnet-20241022`
+* **Dynamic Generation Tuning & Slash Commands**: Adds live parameters via runtime CLI console slash commands:
+  * `/temperature <val>` (tunes temperature from `0.0` to `2.0`)
+  * `/max_tokens <val>` (sets output limits)
+  * `--model <name>` (startup flag to specify a custom model)
+* **Robust CLI Execution (Windows Unicode Crash Fix)**: Escapes unicode data through JSON objects from Python backend to Node.js, resolving encoding crashes on Windows terminals.
+* **Context-Aware Persona Greetings**: Automatically remembers your name from earlier turns in the conversation history and formats custom greeting responses inside:
+  * **Standard**: *"Hello Himalya! Nice to meet you..."*
+  * **Pirate (Captain Jack Sparrow)**: *"Ahoy Himalya! Welcome aboard my ship..."*
+  * **Wizard (Dumbledore)**: *"Greetings, Himalya! What magic brings you to my tower today?"*
+* **Polite Greeting Recognition**: Recognizes phrases like *"nice to meet you"* and responds with custom persona templates utilizing your extracted name.
+* **Code Syntax Highlighting in CLI**: Formats markdown code blocks (` ```python `) inside the CLI using ANSI color escape sequences:
+  * **Keywords** -> Cyan
+  * **Strings** -> Yellow/Orange
+  * **Numbers** -> Magenta
+  * **Comments / delimiters** -> Dim Gray
+
+---
+
 ## 📂 Directory Contents
 
 * **`chatbot.js`**: Node.js coordinator script that initializes the terminal user interface, reads prompt inputs, and spawns the Python backend.
