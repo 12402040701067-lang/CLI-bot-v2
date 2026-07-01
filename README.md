@@ -1,4 +1,4 @@
-# Multi-Provider CLI Chatbot 
+# CLI Bot V2
 
 This directory contains the complete CLI application deliverables. It integrates a Node.js CLI controller with a Python backend to communicate across three AI providers (OpenAI, Gemini, and Anthropic).
 
