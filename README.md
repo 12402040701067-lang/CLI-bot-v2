@@ -1,6 +1,6 @@
-# Multi-Provider CLI Chatbot
+# Multi-Provider CLI Chatbot 
 
-This directory contains the complete CLI application deliverables for the Day 7 Multi-Provider tasks. It integrates a Node.js CLI controller with a Python backend to communicate across three AI providers (OpenAI, Gemini, and Anthropic).
+This directory contains the complete CLI application deliverables. It integrates a Node.js CLI controller with a Python backend to communicate across three AI providers (OpenAI, Gemini, and Anthropic).
 
 ---
 
