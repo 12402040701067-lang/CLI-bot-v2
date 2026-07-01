@@ -1,0 +1,14 @@
+{
+  "name": "multi-provider-cli-chatbot",
+  "version": "1.0.0",
+  "description": "Multi-Provider CLI Chatbot with dynamic cost estimation and interactive themes.",
+  "main": "chatbot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node chatbot.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.106.0",
+    "dotenv": "^17.4.2"
+  }
+}
